@@ -1,6 +1,6 @@
 {
-  "name": "@thevictor/angular-translate-csv",
-  "version": "0.8.0",
+  "name": "@thevictor13/angular-translate-csv",
+  "version": "0.8.1",
   "description": "A CLI build tool to generate JSON files required by Angular Translate from a single CSV file",
   "main": "app.js",
   "scripts": {
