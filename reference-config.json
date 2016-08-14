@@ -1,0 +1,11 @@
+﻿{
+    "csvFileIn": "src/angular/i18n/translations.tsv",
+    "jsonDirOut": "src/angular/i18n",
+    "jsonFileName": "translations",
+    "jsonExt": "json",
+    "jsonIgnoreEmptyString": true,
+    "jsonReplace": { "''": "\"" },
+    "csvFieldSeparator": "\t",
+    "csvEol": "\n",
+    "csvEolAlt": ["\r\n", "\r"]
+}
