@@ -1,6 +1,6 @@
 {
-  "name": "angular-translate-csv",
-  "version": "0.8.3",
+  "name": "angular-translate-csv-to-json",
+  "version": "1.0.0",
   "description": "A CLI build tool to generate JSON files required by Angular Translate from a single CSV file",
   "main": "app.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thevictor13/angular-translate-csv.git"
+    "url": "git+https://github.com/Golapadeog/angular-translate-csv"
   },
   "keywords": [
     "angular",
@@ -18,10 +18,13 @@
     "json",
     "generator"
   ],
-  "author": "Viktor Varadi",
+  "author": "Jérémy Landon",
+  "contributors": [{ "name" : "Viktor Varadi"
+    , "url" : "https://github.com/thevictor13/angular-translate-csv"
+    }],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thevictor13/angular-translate-csv/issues"
+    "url": "https://github.com/Golapadeog/angular-translate-csv/issues"
   },
-  "homepage": "https://github.com/thevictor13/angular-translate-csv#readme"
+  "homepage": "https://github.com/Golapadeog/angular-translate-csv#readme"
 }
