@@ -1,4 +1,4 @@
-# angular-translate-csv
+# angular-translate-csv-to-json
 
 A CLI build tool to generate JSON files required by Angular Translate from a single CSV file
 
@@ -50,14 +50,14 @@ Note: Output JSON will not be pretty-printed as above, but compact.
 ## Installation
 
 ``` bash
-npm install angular-translate-csv --save-dev
+npm install angular-translate-csv-to-json --save-dev
 ```
 
 ## Usage
 
 
 ``` bash
-node node_modules/angular-translate-csv config/angular-translate-csv.config.json
+node node_modules/angular-translate-csv-to-json config/angular-translate-csv-to-json.config.json
 ```
 
 The first (and only) parameter is the path to a config file, which is required.
