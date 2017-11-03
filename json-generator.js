@@ -11,20 +11,20 @@ module.exports = {
 }
 
 function generateJson() {
-    
+
     fs.readFile(path.resolve(process.cwd(), Config.csvFileIn), { encoding: 'utf8' }, function (error, fileContents) {
         if (error) {
             console.error("Error opening CSV file: " + error.message);
             return;
         }
         var to = CsvParser.processCsv(fileContents);
-        
+
         for (var language in to) {
             if (to.hasOwnProperty(language)) {
                 var translations = to[language];
                 var fileName = (StringCheck.isNullOrWhitespace(Config.jsonFileName) ? "" : Config.jsonFileName + '.') + language + (StringCheck.isNullOrWhitespace(Config.jsonExt) ? "" : '.' + Config.jsonExt);
                 var filePath = path.resolve(process.cwd(), Config.jsonDirOut, fileName);
-                
+
                 (function (translations, filePath) {
                     DirManager.ensureDirectoryExistence(filePath);
                     var jsonContent = JsonFormat(translations);
