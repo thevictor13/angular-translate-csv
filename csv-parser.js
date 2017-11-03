@@ -13,12 +13,15 @@ function processCsv(fileContents) {
     var to = {};
 
     var csvToArray = CSVToArray(fileContents, Config.csvFieldSeparator);
+    var size = csvToArray[0].length;
+    
     var languages = csvToArray[0];
     languages.shift();
 
+
     var datas = [];
     for (var i = 1; i < csvToArray.length; i++) {
-        if (csvToArray[i].length <= 1) {
+        if (csvToArray[i].length < size) {
             continue;
         }
         var translations = csvToArray[i];
