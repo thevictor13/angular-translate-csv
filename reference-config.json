@@ -3,5 +3,5 @@
     "jsonDirOut": "src/angular/i18n",
     "jsonFileName": "translations",
     "jsonExt": "json",
-    "csvFieldSeparator": "\t",
+    "csvFieldSeparator": "\t"
 }
