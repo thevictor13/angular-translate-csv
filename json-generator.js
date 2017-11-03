@@ -3,6 +3,7 @@ var path = require('path');
 var Config = require(path.resolve(process.cwd(), process.argv[2]));
 var CsvParser = require('./csv-parser');
 var DirManager = require('./dir-manager');
+var StringCheck = require('./string-check');
 
 module.exports = {
     generateJson: generateJson
@@ -20,7 +21,8 @@ function generateJson() {
         for (var language in to) {
             if (to.hasOwnProperty(language)) {
                 var translations = to[language];
-                var filePath = path.resolve(process.cwd(), Config.jsonDirOut, Config.jsonFileName + '.' + language + '.' + Config.jsonExt);
+                var fileName = (StringCheck.isNullOrWhitespace(Config.jsonFileName) ? "" : Config.jsonFileName + '.') + language + (StringCheck.isNullOrWhitespace(Config.jsonExt) ? "" : '.' + Config.jsonExt);
+                var filePath = path.resolve(process.cwd(), Config.jsonDirOut, fileName);
                 
                 (function (translations, filePath) {
                     DirManager.ensureDirectoryExistence(filePath);
