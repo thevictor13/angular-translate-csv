@@ -71,7 +71,7 @@ This is an example configuration you can adapt to your needs:
     "jsonDirOut": "src/angular/i18n",
     "jsonFileName": "translations",
     "jsonExt": "json",
-    "csvFieldSeparator": ","
+    "csvFieldSeparator": "\t"
 }
 ```
 
