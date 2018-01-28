@@ -2,6 +2,8 @@
 
 A CLI build tool to generate JSON files required by Angular Translate from a single CSV file
 
+[![npm version](https://badge.fury.io/js/angular-translate-csv-to-json.svg)](https://www.npmjs.com/package/angular-translate-csv-to-json)
+
 ## Overview
 
 This is a lightweight, dependency-free command line build tool that converts CSV/TSV files to JSON files Angular Translate can consume during runtime. This enables you to have a single table of translations containing all supported languages. This tool also supports namespacing, so keys like `users.create.labelFirstName` will produce a nested JSON structure.
