@@ -4,6 +4,12 @@ A CLI build tool to generate JSON files required by Angular Translate from a sin
 
 [![npm version](https://badge.fury.io/js/angular-translate-csv-to-json.svg)](https://www.npmjs.com/package/angular-translate-csv-to-json)
 
+## Installation
+
+``` bash
+npm install angular-translate-csv-to-json --save-dev
+```
+
 ## Overview
 
 This is a lightweight, dependency-free command line build tool that converts CSV/TSV files to JSON files Angular Translate can consume during runtime. This enables you to have a single table of translations containing all supported languages. This tool also supports namespacing, so keys like `users.create.labelFirstName` will produce a nested JSON structure.
@@ -48,12 +54,6 @@ users.toastValidationEmailSentToUserEmail | Validation email sent to {{userEmail
 ```
 
 Note: Output JSON will not be pretty-printed as above, but compact.
-
-## Installation
-
-``` bash
-npm install angular-translate-csv-to-json --save-dev
-```
 
 ## Usage
 
